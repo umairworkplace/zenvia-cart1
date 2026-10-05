@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omni Cart | Shop smart, live better</title>
+  <meta name="description" content="Omni Cart is your one-stop shop for electronics, fashion, home, beauty and more. Free shipping over $99 and 30-day returns.">
+  <meta property="og:title" content="Omni Cart">
+  <meta property="og:description" content="Top-quality products at great prices. Free shipping over $99.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛍️%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <div class="announce">
+    <span>Free shipping on orders over $99</span>
+    <span>30-day money-back guarantee</span>
+    <span>24/7 customer support</span>
+  </div>
+
+  <header class="nav glass" id="top">
+    <a class="logo" href="#top" aria-label="Omni Cart home">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF8A4C"/><stop offset="1" stop-color="#FF4D2E"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M8 11h3l2 9h9l2-6H12" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="24" r="1.7" fill="#fff"/><circle cx="21" cy="24" r="1.7" fill="#fff"/></svg>
+      <span>Omni Cart</span>
+    </a>
+
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="#top" class="active">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#products">New arrivals</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="searchInput" placeholder="Search products" aria-label="Search products" autocomplete="off">
+      <button type="submit" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+    </form>
+
+    <div class="actions">
+      <button class="icon-btn" id="wishBtn" aria-label="Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <b class="count" id="wishCount">0</b>
+      </button>
+      <a class="icon-btn" href="#contact" aria-label="Account">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+      </a>
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h3l2.5 11h10L21 8H7"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+        <b class="count" id="cartCount">0</b>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="pill glass">New collection is here</p>
+        <h1>Find the best products, delivered to your door</h1>
+        <p class="lead">Thousands of quality items at prices that make sense. Exclusive deals every week, tracked shipping, and easy returns.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#products">Shop now</a>
+          <a class="btn btn-glass" href="#deals">See today's deals</a>
+        </div>
+        <ul class="mini-trust">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><span><b>Free shipping</b>On orders over $99</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg><span><b>30-day returns</b>Hassle-free</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>Secure payment</b>100% safe</span></li>
+        </ul>
+      </div>
+
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="scene" id="scene">
+          <div class="pedestal"></div>
+          <div class="pedestal-top"></div>
+          <svg class="watch" viewBox="0 0 260 380" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="band" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b2038"/><stop offset=".5" stop-color="#363d5e"/><stop offset="1" stop-color="#1b2038"/></linearGradient>
+              <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a5174"/><stop offset=".5" stop-color="#171b2e"/><stop offset="1" stop-color="#2a3050"/></linearGradient>
+              <radialGradient id="screen" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#2b3358"/><stop offset="1" stop-color="#05070f"/></radialGradient>
+              <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            </defs>
+            <rect x="75" y="0" width="110" height="130" rx="26" fill="url(#band)"/>
+            <rect x="75" y="250" width="110" height="130" rx="26" fill="url(#band)"/>
+            <rect x="238" y="140" width="14" height="48" rx="6" fill="#2a3050"/>
+            <rect x="28" y="95" width="204" height="190" rx="52" fill="url(#body)"/>
+            <rect x="42" y="109" width="176" height="162" rx="40" fill="url(#screen)"/>
+            <g stroke="#FF6B2C" stroke-width="3" stroke-linecap="round"><path d="M130 190V148"/><path d="M130 190l32 18" stroke="#fff"/></g>
+            <circle cx="130" cy="190" r="6" fill="#FF6B2C"/>
+            <g fill="#fff" opacity=".8"><circle cx="130" cy="124" r="2.4"/><circle cx="130" cy="256" r="2.4"/><circle cx="62" cy="190" r="2.4"/><circle cx="198" cy="190" r="2.4"/></g>
+            <text x="130" y="232" text-anchor="middle" font-family="Manrope, sans-serif" font-size="15" font-weight="700" fill="#cfd5ee">10:09</text>
+            <rect x="42" y="109" width="176" height="162" rx="40" fill="url(#shine)"/>
+          </svg>
+          <div class="float f-save glass-dark"><b>30%</b><span>off today</span></div>
+          <div class="float f-rate glass"><span class="stars">★★★★★</span><span>4.9 from 2,100 reviews</span></div>
+          <div class="float f-ship glass"><span>Ships in 24h</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="wrap sec" id="categories">
+      <div class="sec-head"><h2>Shop by category</h2><button class="link-btn" data-cat="all">View all products</button></div>
+      <div class="cats">
+        <button class="cat glass" data-cat="Electronics"><i>🎧</i><span>Electronics</span></button>
+        <button class="cat glass" data-cat="Fashion"><i>👜</i><span>Fashion</span></button>
+        <button class="cat glass" data-cat="Home"><i>🛋️</i><span>Home &amp; Living</span></button>
+        <button class="cat glass" data-cat="Beauty"><i>💄</i><span>Beauty</span></button>
+        <button class="cat glass" data-cat="Sports"><i>👟</i><span>Sports</span></button>
+        <button class="cat glass" data-cat="Toys"><i>🧸</i><span>Toys &amp; Games</span></button>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="wrap sec" id="products">
+      <div class="sec-head">
+        <h2 id="productsTitle">Best selling products</h2>
+        <div class="sort">
+          <label for="sortSel" class="sr">Sort</label>
+          <select id="sortSel" class="glass">
+            <option value="popular">Most popular</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+            <option value="rating">Top rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>No products match your search. Try a different word or pick another category.</p>
+    </section>
+
+    <!-- DEAL BANNER -->
+    <section class="wrap sec" id="deals">
+      <div class="deal">
+        <div class="deal-copy">
+          <p class="pill-dark">Limited-time offer</p>
+          <h2>Super sale: up to 50% off</h2>
+          <p>On selected items. Shop before the deal ends.</p>
+        </div>
+        <div class="timer" id="timer" role="timer" aria-label="Time left in the sale">
+          <div><b id="tD">00</b><small>Days</small></div>
+          <div><b id="tH">00</b><small>Hours</small></div>
+          <div><b id="tM">00</b><small>Mins</small></div>
+          <div><b id="tS">00</b><small>Secs</small></div>
+        </div>
+        <a class="btn btn-primary" href="#products">Shop the sale</a>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="wrap sec">
+      <div class="sec-head"><h2>Featured brands</h2></div>
+      <div class="brands glass">
+        <span>Nordwave</span><span>Kairo</span><span>Lumio</span><span>Veltra</span><span>Orbit&amp;Co</span><span>Zento</span>
+      </div>
+    </section>
+
+    <!-- REVIEWS + WHY -->
+    <section class="wrap sec two">
+      <article class="glass card-pad review" aria-live="polite">
+        <h2>What our customers say</h2>
+        <div class="quote" id="quote">
+          <div class="avatar" id="qAvatar">MB</div>
+          <div>
+            <p class="stars">★★★★★</p>
+            <p id="qText">Amazing quality and fast delivery. The products are exactly as described. Highly recommended.</p>
+            <p class="who"><b id="qName">Michael Brown</b> · Verified buyer</p>
+          </div>
+        </div>
+        <div class="dots" id="dots"></div>
+      </article>
+      <article class="glass card-pad why">
+        <h2>Why shop with us</h2>
+        <div class="stats">
+          <div><b>10K+</b><span>Happy customers</span></div>
+          <div><b>15K+</b><span>Products sold</span></div>
+          <div><b>99%</b><span>Positive reviews</span></div>
+          <div><b>24/7</b><span>Customer support</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- NEWSLETTER + INSTAGRAM -->
+    <section class="wrap sec two">
+      <article class="glass card-pad news">
+        <h2>Get deals in your inbox</h2>
+        <p>New products and exclusive offers, straight to your email.</p>
+        <form id="newsForm" class="news-form">
+          <input type="email" id="newsEmail" placeholder="Enter your email address" required aria-label="Email address">
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </form>
+        <label class="check"><input type="checkbox" required> I agree to the privacy policy</label>
+        <p class="form-msg" id="newsMsg" role="status"></p>
+      </article>
+      <article class="glass card-pad insta">
+        <h2>Follow us on Instagram</h2>
+        <div class="insta-grid">
+          <i style="--h:20">👜</i><i style="--h:200">🎧</i><i style="--h:250">⌚</i><i style="--h:140">👟</i>
+        </div>
+        <a class="btn btn-dark" href="#contact">Follow @omnicart</a>
+      </article>
+    </section>
+
+    <!-- BLOG + FAQ -->
+    <section class="wrap sec two" id="blog">
+      <div>
+        <div class="sec-head"><h2>Latest from our blog</h2></div>
+        <div class="posts">
+          <a class="post glass" href="#blog"><i style="--h:215">💻</i><small>May 15, 2026</small><b>10 tips to choose the right products online</b></a>
+          <a class="post glass" href="#blog"><i style="--h:25">👜</i><small>May 12, 2026</small><b>How to find the best deals and discounts</b></a>
+          <a class="post glass" href="#blog"><i style="--h:260">☕</i><small>May 10, 2026</small><b>The future of e-commerce: trends to watch</b></a>
+        </div>
+      </div>
+      <div>
+        <div class="sec-head"><h2>Frequently asked questions</h2></div>
+        <div class="faq">
+          <details class="glass"><summary>What payment methods do you accept?</summary><p>We accept major credit and debit cards, Apple Pay and Google Pay. All payments are processed securely.</p></details>
+          <details class="glass"><summary>How can I track my order?</summary><p>Once your order ships you will get an email with a tracking number and a link to follow your package.</p></details>
+          <details class="glass"><summary>What is your return policy?</summary><p>Return any item within 30 days of delivery for a refund. Items must be unused and in their original packaging.</p></details>
+          <details class="glass"><summary>Do you ship internationally?</summary><p>We currently ship across the United States. International shipping is coming soon.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="wrap trustbar glass">
+      <div><b>Secure checkout</b><span>100% protected</span></div>
+      <div><b>Easy returns</b><span>30-day policy</span></div>
+      <div><b>Quality guarantee</b><span>Premium products</span></div>
+      <div><b>Fast delivery</b><span>Tracked shipping</span></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="wrap fgrid">
+      <div>
+        <a class="logo light" href="#top"><span>Omni Cart</span></a>
+        <p>Your one-stop shop for top-quality products at the best prices. Shop smart, live better.</p>
+      </div>
+      <div><h3>Quick links</h3><a href="#top">Home</a><a href="#products">Shop</a><a href="#categories">Categories</a><a href="#deals">Deals</a></div>
+      <div><h3>Customer service</h3><a href="#contact">Contact us</a><a href="#contact">Shipping policy</a><a href="#contact">Return policy</a><a href="#contact">Terms and conditions</a></div>
+      <div><h3>My account</h3><a href="#contact">My orders</a><a href="#contact">Wishlist</a><a href="#contact">Track order</a><a href="#contact">Login / Register</a></div>
+      <div><h3>Contact us</h3><p>123 Commerce St, Suite 100<br>New York, NY 10001</p><p>support@omnicart.example</p></div>
+    </div>
+    <div class="wrap fbottom">
+      <span>© 2026 Omni Cart. All rights reserved.</span>
+      <span class="pay"><b>VISA</b><b>Mastercard</b><b>PayPal</b><b>Apple Pay</b><b>Google Pay</b></span>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer glass" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button></div>
+    <div class="ship-progress"><p id="shipMsg"></p><div class="bar"><i id="shipBar"></i></div></div>
+    <ul class="cart-list" id="cartList"></ul>
+    <div class="drawer-foot">
+      <div class="row"><span>Subtotal</span><b id="subtotal">$0.00</b></div>
+      <p class="note">Shipping and tax are calculated at checkout.</p>
+      <button class="btn btn-primary wide" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast glass-dark" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
